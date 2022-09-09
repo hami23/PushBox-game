@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			#container {
+				position: relative;
+				margin: 20px auto;
+			}
+
+			.box {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background: url(images/box.png) no-repeat;
+			}
+
+			.person {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background: url(images/renwu.png) no-repeat;
+			}
+
+			.pos0 {
+				float: left;
+				width: 50px;
+				height: 50px;
+				background-color: #fff;
+			}
+
+			.pos1 {
+				float: left;
+				width: 50px;
+				height: 50px;
+				background: url(images/block.gif) no-repeat;
+			}
+
+			.pos2 {
+				float: left;
+				width: 50px;
+				height: 50px;
+				background: url(images/wall.png) no-repeat;
+			}
+
+			.pos3 {
+				float: left;
+				width: 50px;
+				height: 50px;
+				background: url(images/ball.png) no-repeat;
+			}
+
+			video {
+				width: 420px;
+				height: 340px;
+			}
+			
+			.clearfix::after {
+				content: '';
+				display: block;
+				height: 0;
+				clear: both;
+			}
+		</style>
+		<link rel="stylesheet" href="css/level.css">
+	</head>
+
+	<body>
+		<div id="container" class="clearfix">
+			
+		</div>
+		<div class="gongneng">
+			<div class="level">
+				<h2 style="color: #3b818c">关卡</h2>
+				<a href="javascript:;">
+					<div class="level0 btn1">第一关</div>
+				</a>
+				<a href="javascript:;">
+					<div class="level0 btn2">第二关</div>
+				</a>
+				<a href="javascript:;">
+					<div class="level0 btn3">第三关</div>
+				</a>
+				<a href="javascript:;">
+					<div class="level0">......</div>
+				</a>
+			</div>
+			<a href="javascript:;">
+				<div class="again">重玩本关</div>
+			</a>
+		</div>
+
+		<audio src="./bgm战斗老板.mp3" hidden autoplay="autoplay" loop="loop" preload="auto"></audio>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/推箱子.js"></script>
+	</body>
+
+</html>
